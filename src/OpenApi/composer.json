@@ -1,6 +1,6 @@
 {
     "name": "jane-php/open-api",
-    "description": "Generate a PHP Client API (PSR7/PSR18 compatible) given a OpenApi (Swagger) specification",
+    "description": "Generate a PHP Client API (PSR7/PSR18 compatible) given a OpenApi 3.x specification",
     "type": "library",
     "keywords": ["jane", "swagger", "openapi"],
     "license": "MIT",
@@ -8,6 +8,10 @@
         {
             "name": "Joel Wurtz",
             "email": "jwurtz@jolicode.com"
+        },
+        {
+            "name": "Baptiste Leduc",
+            "email": "baptiste.leduc@gmail.com"
         }
     ],
     "autoload": {
@@ -28,12 +32,12 @@
         "jane-php/json-schema-runtime": "^5.0",
         "jane-php/open-api-runtime": "^5.0",
         "nikic/php-parser": "^4.0",
-        "symfony/serializer": "^3.2|^4.0",
-        "symfony/yaml": "^3.1|^4.0"
+        "symfony/serializer": "^3.2 || ^4.0",
+        "symfony/yaml": "^3.1 || ^4.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.15",
-        "phpunit/phpunit": "^4.7"
+        "friendsofphp/php-cs-fixer": "2.15.3",
+        "phpunit/phpunit": "^6.0"
     },
     "suggest": {
         "friendsofphp/php-cs-fixer": "To have a nice formatting of the generated files"

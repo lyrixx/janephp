@@ -35,9 +35,6 @@
         "jane-php/open-api": "self.version",
         "jane-php/open-api-runtime": "self.version"
     },
-    "conflict": {
-        "friendsofphp/php-cs-fixer": "<2.0 || >=3.0"
-    },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "2.15.3",
         "localheinz/composer-normalize": "~0.8.0",
@@ -61,7 +58,8 @@
     "autoload": {
         "psr-4": {
             "Jane\\": "src/"
-        }
+        },
+        "files": ["helpers.php"]
     },
     "autoload-dev": {
         "classmap": [
